@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Bike Speedometer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'dark-bg': '#1a1b26',
+              'dark-card': '#24283b',
+              'dark-text': '#c0caf5',
+              'dark-accent': '#7aa2f7',
+              'dark-green': '#9ece6a',
+              'dark-red': '#f7768e',
+              'light-bg': '#f4f5f7',
+              'light-card': '#ffffff',
+              'light-text': '#3d4857',
+              'light-accent': '#3b82f6',
+              'light-green': '#10b981',
+              'light-red': '#ef4444',
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "dexie": "https://aistudiocdn.com/dexie@^4.2.0",
+    "dexie-react-hooks": "https://aistudiocdn.com/dexie-react-hooks@^4.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-light-bg dark:bg-dark-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
